@@ -12,7 +12,7 @@ type Props = {
   tone?: Tone;
 };
 
-export default function Button({ title, onPress, loading, disabled, variant = 'primary', tone }: Props) {
+export default function Button({ title, onPress, loading, disabled, variant='primary', tone }: Props) {
   const bg = variant === 'primary' ? (tone?.bg ?? colors.primary) : colors.card;
   const border = variant === 'ghost' ? (tone?.bg ?? colors.primary) : 'transparent';
   const fg = variant === 'primary' ? (tone?.fg ?? colors.onPrimary) : (tone?.bg ?? colors.primary);
